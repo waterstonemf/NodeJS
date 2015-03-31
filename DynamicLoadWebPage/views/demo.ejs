@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>demo</title>
+  </head>
+  <body>
+    <div id="content">
+		<p>Initial Content</p>
+		<div>
+			<div><img src="images/00.png" /></div>
+			<div><img src="images/00.png" /></div>
+			<div><img src="images/00.png" /></div>
+			<div><img src="images/00.png" /></div>
+		</div>
+	</div>
+	
+	<script src="/javascripts/lib/jquery-2.1.3.js"></script>
+	<script>
+	
+		var currentPage = 0;
+		var initialLoading = true;
+		function loadMore()
+		{
+		
+			if(initialLoading){
+				initialLoading = false;
+				return;
+			}
+			var scrollTop = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			var documentHeight = $(document).height();
+			
+			if((scrollTop + windowHeight > documentHeight - 50) && currentPage < 3)
+			{
+				//var newContent = "<p>This is new content" + scrollTop + "," + windowHeight + "," +  documentHeight + "</p>"
+				//$("#content").append(newContent);
+				
+				currentPage++;
+				$.ajax({
+					type:"GET",
+					url: 'demo/showMore/' + currentPage,
+					success: function(result){$("#content").append(result)},
+					error: function(error){alert(error);}
+				});
+			}
+		}
+		
+		$(window).scroll(loadMore);	
+	</script>
+  </body>
+</html>
