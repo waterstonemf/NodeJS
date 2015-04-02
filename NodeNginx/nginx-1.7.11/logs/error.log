@@ -1,0 +1,15 @@
+2015/04/02 12:48:47 [emerg] 2728#6960: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2015/04/02 12:49:16 [emerg] 3616#2956: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2015/04/02 12:49:33 [emerg] 6660#1084: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2015/04/02 14:21:45 [emerg] 1016#6108: unexpected "}" in D:\Docs\03Git\NodeJS\NodeNginx\nginx-1.7.11/conf/nginx.conf:54
+2015/04/02 14:22:17 [emerg] 5504#4800: unexpected "}" in D:\Docs\03Git\NodeJS\NodeNginx\nginx-1.7.11/conf/nginx.conf:54
+2015/04/02 14:22:45 [emerg] 6376#1548: bind() to 0.0.0.0:8080 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2015/04/02 14:23:57 [error] 3960#1932: *2 CreateFile() "D:\Docs\03Git\NodeJS\NodeNginx\nginx-1.7.11/../node/public/login" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", host: "localhost:8081"
+2015/04/02 14:26:54 [error] 3960#1932: *7 CreateFile() "D:\Docs\03Git\NodeJS\NodeNginx\nginx-1.7.11/../node/public/login" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", host: "localhost:8081"
+2015/04/02 14:27:54 [error] 3960#1932: *7 CreateFile() "D:\Docs\03Git\NodeJS\NodeNginx\nginx-1.7.11/../node/public/login" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", host: "localhost:8081"
+2015/04/02 14:27:55 [error] 3960#1932: *7 CreateFile() "D:\Docs\03Git\NodeJS\NodeNginx\nginx-1.7.11/../node/public/login" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", host: "localhost:8081"
+2015/04/02 14:27:55 [error] 3960#1932: *7 CreateFile() "D:\Docs\03Git\NodeJS\NodeNginx\nginx-1.7.11/../node/public/login" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", host: "localhost:8081"
+2015/04/02 14:29:04 [notice] 2716#6272: signal process started
+2015/04/02 14:31:08 [notice] 6256#2572: signal process started
+2015/04/02 14:33:23 [notice] 4456#5200: signal process started
+2015/04/02 14:33:37 [error] 3584#6132: *1 CreateFile() "D:\Docs\03Git\NodeJS\NodeNginx\nginx-1.7.11/../node/public/login" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /login HTTP/1.1", host: "localhost:8081"
