@@ -1,0 +1,58 @@
+
+<link rel="stylesheet" href="./assets/css/playersearch-style.css" />
+
+<div data-role="header" data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b">
+        <h1 class="ui-title" role="heading"><%=ui_findplayer%></h1>
+        <a data-role="button" class="ui-btn-right" data-transition="fade" id="logout-icon" data-icon="custom"><%= username %></a>
+</div>
+
+<form method="post" id="search-form" data-ajax="false">	
+    <div id="searchdiv">
+            <ul data-role="listview" data-inset="true" id="infoList">
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="playerid"><b>Player ID</b></label>
+                <input data-role="none" class="input-custom" name="playerid" id="playerid" placeholder="" value="" type="text" />
+            </li>
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="firstname"><b>First Name</b></label>
+                <input data-role="none" class="input-custom" name="firstname" id="firstname" placeholder="" value="" type="text" />
+            </li>
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="lastname"><b>Last Name</b></label>
+                <input data-role="none" class="input-custom"  name="lastname" id="lastname" placeholder="" value="" type="text" />
+            </li>
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="phone"><b>Phone</b></label>
+                <input data-role="none" class="input-custom" name="phone" id="phone" placeholder="" value="" type="text" />
+            </li>
+            </ul>
+
+            <div>
+            <input id="btn-search" type="submit" data-theme="b" data-icon="search" data-iconpos="left" value="Find"/>
+            </div>
+    </div>
+</form>
+
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="myfooter" data-theme="b" data-tap-toggle="false">
+	  <div data-role="navbar"  data-iconpos="top">
+        <ul>
+            <li>
+		<a class="nav-custom" data-transition="slide" id="findplayer" data-icon="custom">
+                    <%= ui_findplayer %>
+                </a>
+            </li>
+            <li>
+                <a class="nav-custom" data-transition="slide" id="history"  data-icon="custom">
+                    <%= ui_browinghistory %>
+                </a>
+            </li>
+			<li>
+                <a class="nav-custom" data-transition="slide" id="about"  data-icon="custom">
+                    <%= ui_about %>
+                </a>
+            </li>
+        </ul>
+	  </div>
+</div>
+

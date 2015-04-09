@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="/mcm/assets/css/playersearchresult-style.css" />
+
+<div data-role="header" data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b">
+        <h1 class="ui-title" role="heading"><%=ui_findresult%></h1>
+        <a data-role="button" class="ui-btn-right" data-transition="fade" id="logout-icon" data-icon="custom"><%= username %></a>
+</div>
+
+<div id="listdiv" data-filter="false" data-ajax="true">
+    <ul id="listul" data-role="listview" data-filter="false" data-theme="c" data-inset="true" data-ajax="true">
+        <% _.each(resultCollection.toJSON(), function(result){%>
+            <li data-icon='false'>
+                <a onclick="window.location.hash='playerview/<%=result.playerID%>/1/0'">
+                    <img style='float:left;margin-top:6px;margin-left:5px;width:70px;height:70px;' src=<%="'data:image/jpeg;base64," + result.playerImage + "' " %> > 
+                     <p><table class='ctab'><tr>
+                             <td class='cplayerid'><img class='cicon' src='assets/images/player.png'> <%= result.playerID%></td>
+                             <td class='cname'><%= result.firstName + " " +result.lastName%></td>
+                    </tr></table></p>
+                    <p><table class='ctab'><tr>
+                            <td class='cphone'><img class='cicon' src='assets/images/phone.png'><%=result.phone%></td>
+                            <td class='cstate'><%=result.state%></td>
+                            <td class='ccountry'><%=result.country%></td>
+                            <td class='cbir'><%=result.birthday%></td>
+                     </tr></table></p>
+             </a></li>
+         <%});%>
+    </ul>
+</div>
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="myfooter" data-theme="b" data-tap-toggle="false">
+    <div data-role="navbar"  data-iconpos="top">
+        <ul>
+            <li>
+		<a class="nav-custom" data-transition="slide" id="findplayer" data-icon="custom">
+                    <%=ui_findplayer%>
+                </a>
+            </li>
+            <li>
+                <a class="nav-custom" data-transition="slide" id="history"  data-icon="custom">
+                    <%=ui_browinghistory%>
+                </a>
+            </li>
+			<li>
+                <a class="nav-custom" data-transition="slide" id="about"  data-icon="custom">
+                    <%=ui_about%>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

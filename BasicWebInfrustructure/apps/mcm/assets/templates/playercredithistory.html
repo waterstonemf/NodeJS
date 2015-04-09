@@ -1,0 +1,58 @@
+<div data-role="header"   data-position="fixed"  data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b  header">  
+    <div id="back-title-panel"><a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true"><img src="./assets/images/back.png" id="back"></a>
+        <span id="page-title">Player Credit History</span></div>
+        <img src="./assets/images/player_image_small.png" id="switch-player">
+</div>
+<div class="clear"></div>
+
+<div style="text-align: center;">
+    <div id="player-credit-info">
+        <ul data-role="listview">
+            <li data-role="fieldcontain">			
+                <label class="input-label-custom" for="last-action"><b>Last Action</b></label>				
+                <input id="last-action" data-role="none" class="input-custom" value="$15,000,000 (23/Sep/2014)" type="text" disabled="true" style="text-align: right"/>
+            </li> 
+            <li data-role="fieldcontain">			
+                <label class="input-label-custom" for="high-action"><b>High Action</b></label>				
+                <input id="high-action" data-role="none" class="input-custom" value="$30,000,000 (15/Jan/2012)" type="text" disabled="true" style="text-align: right"/>	
+            </li>  
+            <li data-role="fieldcontain">			
+                <label class="input-label-custom" for="last-trip-bet"><b>Last Trip Bet</b></label>				
+                <input id="last-trip-bet"  data-role="none" class="input-custom" value="$19,000,000 (20/Sep/2014)" type="text" type="text" disabled="true" style="text-align: right"/>	
+            </li>  
+            <li data-role="fieldcontain">			
+                <label class="input-label-custom" for="avg-trip-bet"><b>Avg Trip Bet</b></label>				
+                <input id="avg-trip-bet"  data-role="none" class="input-custom" value="$11,056,000" type="text" disabled="true" style="text-align: right"/>	
+            </li>  
+            <li data-role="fieldcontain">			
+                <label class="input-label-custom" for="write-offs"><b>Write Offs</b></label>				
+                <input id="write-offs"  data-role="none" class="input-custom" value="$80,000 (18/Jun/2012)" type="text" disabled="true" style="text-align: right"/>			
+            </li>  
+        </ul>           	
+    </div>
+    <div>
+        <img src="./assets/images/credit_history.png">     
+    </div>
+</div>
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="page-footer" data-theme="b" data-tap-toggle="false" id="page-footer">
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="junket-credit">
+                    <img src="./assets/images/junket_credit.png" />
+                    <span><%= ui_junketcredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="player-credit" class="ui-btn-active ui-state-persist">
+                    <img src="./assets/images/player_credit.png" alt="Picture" />
+                    <span><%= ui_playercredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="me">
+                    <img src="./assets/images/me.png" alt="Picture"/>
+                    <span><%= ui_me %></span> </a>
+            </li>
+        </ul>
+    </div>
+</div>

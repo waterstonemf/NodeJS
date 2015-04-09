@@ -1,0 +1,359 @@
+/*
+    Common Styles
+*/
+#divpage {
+  margin: 0;
+  padding: 0;
+}
+
+.ui-page{
+    padding-top: 0 !important;
+}
+
+#actioninfo{
+	width:100%;
+	margin:0px 0% 0% 0%;
+}
+
+#creditinfo{
+	display:inline-block;
+	vertical-align: top;
+	width:49%;
+	margin: 10px 0% 0% 0%;
+        
+}
+
+.grayli{
+	background-color:#333333;
+}
+
+.middlecol{
+	text-align:center;
+}
+
+.input-custom {
+	width:150px;
+	margin-left:10px;
+	color:#696969;
+	border:none; 
+	box-shadow:none; 
+	background-color:transparent;
+
+	font-weight: normal; 
+	background-image: none; 
+	padding: .4em; 
+	margin: 0 0; 
+	line-height: 1.4; 
+	font-size: 16px; 
+	display: block; 
+	outline: 0;
+	vertical-align:middle;
+}
+
+.input-label-custom,.input-label-custom-long {
+	float: left;
+	font-size: 16px; 
+	line-height: 1.4; 
+	display:inline-block;
+	font-weight: bold;
+	margin: .5em 0 .3em;
+	vertical-align:middle;
+}
+
+.input-label-custom{
+	width: 100px;    
+}
+
+.input-label-custom-long{
+	width: 200px;    
+}
+
+option{
+    width:100px;
+}
+
+.align-wrapper{
+    width: 260px; 
+    margin: 0 auto;
+}
+
+
+
+#logout-icon  .ui-icon{ background:  url("../icon library/logout_btn_icon.png") 50% 50% no-repeat; background-size: 18px 18px; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important;-webkit-border-radius: 0 !important; border-radius: 0 !important;}
+
+//.nav-custom .ui-btn .ui-btn-inner { padding-top: 33px !important; }
+.nav-custom .ui-btn .ui-btn-text { font-size: 11px !important;text-align:bottom !important;}
+.nav-custom .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+.ui-listview-filter-inset { margin:0; background: transparent; }
+
+
+#findplayer  .ui-icon{background:  url("../icon library/find_btn.png") 50% 50% no-repeat; background-size: 28px 28px;}
+#about  .ui-icon{background:  url("../icon library/help_btn.png") 50% 50% no-repeat; background-size: 28px 28px;}
+#history  .ui-icon{background:  url("../icon library/history.png") 50% 50% no-repeat; background-size: 28px 28px;}
+#creditlineman  .ui-icon{background:  url("../icon library/creditlineman.png") 50% 50% no-repeat; background-size: 28px 28px;}
+
+/*
+    Styles for Page CreditLineManagement
+*/
+#tto-expires-choice-1,#tto-expires-choice-1-label,#tto-expires-date,#tto-expires-trip{
+    margin-left:100px;
+}
+
+#cl-tto_submit{
+    margin-right: 50px;
+}
+
+#authorizer{
+    color:#696969;
+
+    font-weight: normal; 
+    background-image: none; 
+    line-height: 1.4; 
+    font-size: 16px;    
+}
+
+#credit-line-man div.ui-select{
+    width: 220px;
+}
+
+#authorizer-lable{
+    width:200px;
+    margin-right: 0;
+}
+
+#page-footer a{
+    text-align: center;
+}
+
+#page-footer a img{
+    vertical-align:middle;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto ;
+    height:36px;
+    margin-top: 2px;
+       
+}
+
+#page-footer a span{
+    vertical-align:middle;
+    margin-left: auto; 
+    margin-right: auto 
+}
+
+#player-credit{
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+
+.header{
+    position: relative;
+    height:36px;
+}
+
+.clear{
+    clear:both;
+}
+
+
+
+.main-fuction{
+    width:80px;
+    height:80px;
+    padding:0;
+    border:#696969 4px solid;
+    border-radius: 80px;
+    text-align: center;
+    vertical-align: middle;  
+}
+
+/*.main-fuction-active{
+     width:80px;
+    height:80px;
+    padding:0;
+    border:orange 4px solid;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;     
+    color:orange;
+    }   */
+
+.main-fuction .ui-btn-inner,.main-fuction-active .ui-btn-inner{
+    padding-top: 28px;
+    padding-left:0;
+    padding-right: 0;
+}
+
+#page-footer .ui-btn-inner{
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+#back-title-panel{
+    margin-top: 3px;
+    margin-left:5px;
+    display: inline-block;
+}
+
+#back-title-panel a{
+    margin: 0;
+}
+
+#back-title-panel .ui-btn-inner{
+    padding: 0px;
+}
+
+#page-title{
+    padding-left: 5px;
+    padding-top: 3px;
+    //vertical-align: top;
+} 
+
+#switch-player{
+    float:right;
+    margin-right: 5px;
+    margin-top: 2px;
+ //   height:55px;
+}
+
+/*
+    login
+*/
+.ui-icon-mdahost-loginbtn {
+	background-image: url("/mcm/assets/images/icon_login_btn_d.png") !important;
+}
+
+.LoginForm1 {
+	width:290px;
+}
+
+body {
+	background: -webkit-radial-gradient(circle, #6DABD4, #3B6EA0);
+}
+
+#backbonediv {
+	background: -webkit-radial-gradient(circle, #6DABD4, #3B6EA0);
+}
+
+#divcenter{
+   position:absolute;
+   top:200px;
+   left:50%;
+   width:300px;
+   height:320px;
+   margin-top:-150px;
+   margin-left:-165px;
+}
+
+/*
+    main page
+*/
+
+#player-search .ui-btn-inner{
+    padding-top: 0;
+    padding-bottom:0;
+}
+
+#player-search-panel{
+    width:300px;
+    height:50px;
+    border:#696969 2px solid;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    display:none;
+}
+
+#player-info li, #player-credit-info li{
+    padding: 0;
+}
+
+#player-info li .input-label-custom{
+    width: 120px;
+}
+
+#player-info li .input-custom{
+    width: 140px;
+}
+
+#player-credit-info .input-custom{
+    width: 240px;
+}
+
+#player-credit-info .input-label-custom{
+    margin-left:5px;
+}
+
+#tto-save span{
+    padding:0
+}
+
+#tto-comment table{
+    border-spacing: 0;
+    border-collapse:collapse;
+        
+}
+
+#tto-comment input{
+    height:23px;
+}
+
+#tto-comment *{
+    margin-top: 0;
+    margin-bottom: 0;
+        
+}
+
+/*#recommended-tto{
+    width:300px !important;
+}*/
+
+
+/*
+player credit adjust
+*/
+
+#leida-chart{
+    margin-top: 5px;
+    width:303px;
+    height:216px;
+}
+
+#limit-detail{
+    margin:0;
+    padding:0
+}
+
+#limit-detail span{
+    padding:0;
+    margin: 0;
+}
+
+#limit-detail-info{
+    display:none;
+}
+
+#limit-detail-info .input-label-custom, #limit-detail-info .input-custom
+{
+    color: blueviolet;
+}
+
+/*Me*/
+#my-activities img{
+    float:none;
+    margin-top:5px;
+}
+#my-activities a{
+    padding : 0;
+    margin:0;
+    min-height: 50px;;
+}
+
+#my-activities a span{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 20px;
+}

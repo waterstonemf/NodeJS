@@ -1,0 +1,67 @@
+<div data-role="header" data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b  header">  
+        <div id="back-title-panel"><a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true"><img src="./assets/images/back.png" id="back"></a>
+        <span id="page-title">My Received Approval Requests</span></div>
+</div>
+<div class="clear"></div>
+
+<div style="text-align: center;">
+    <div id="player-credit-info">		
+        <ul data-role="listview">
+            <li data-role="fieldcontain">
+                <img src="./assets/images/player_image_large.png" style="display: inline-block; width:70px; margin-top: 2px">
+                <div style="display: inline-block; margin-left: 72px;width:290px">
+                    <label width="200px;" for="player-fixed-credit"><b>Nancy Wang (Macau Junket Ltd)</b></label><br>								
+                    <input data-role="none" class="input-custom" value="TTO:$0 (60,000,000 Pending)" type="text" disabled="true" />	
+                    <input data-role="none" class="input-custom" value="From Jack Lau" type="text" disabled="true" />	 
+                    <div style="float:right">
+                        <a data-role="button" data-inline="true" data-mini="true" style="width:75px">Approve</a><a href="#playercreditadjust" data-role="button" data-inline="true" data-mini="true" style="width:75px">Detail</a>
+                    </div>
+                </div>							
+            </li>  
+            <li data-role="fieldcontain">
+                <img src="./assets/images/Cindy_img.png" style="display: inline-block; width:70px; margin-top: 2px">
+                <div style="display: inline-block; margin-left: 72px;width:290px">
+                    <label width="200px;" for="player-fixed-credit"><b>Cindy Chan (Macau Hongda Ltd.)</b></label><br>								
+                    <input data-role="none" class="input-custom" value="TTO:$0 (70,000,000 Pending)" type="text" disabled="true" />	
+                    <input data-role="none" class="input-custom" value="From Sun Susie" type="text" disabled="true" />	 
+                    <div style="float:right">
+                        <a data-role="button" data-inline="true" data-mini="true" style="width:75px">Approve</a><a href="#playercreditadjust" data-role="button" data-inline="true" data-mini="true" style="width:75px">Detail</a>
+                    </div>
+                </div>							
+            </li> 
+            <li data-role="fieldcontain">
+                <img src="./assets/images/John_img.png" style="display: inline-block; width:70px; margin-top: 2px">
+                <div style="display: inline-block; margin-left: 72px;width:290px">
+                    <label width="200px;" for="player-fixed-credit"><b>John Johnson (Zhuhai Money Ltd.)</b></label><br>								
+                    <input data-role="none" class="input-custom" value="TTO:$0 (80,000,000 Pending)" type="text" disabled="true" />	
+                    <input data-role="none" class="input-custom" value="From Fen Wen" type="text" disabled="true" />	 
+                    <div style="float:right">
+                        <a data-role="button" data-inline="true" data-mini="true" style="width:75px">Approve</a><a href="#playercreditadjust" data-role="button" data-inline="true" data-mini="true" style="width:75px">Detail</a>
+                    </div>
+                </div>							
+            </li>  
+        </ul>
+    </div>
+</div>
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="page-footer" data-theme="b" data-tap-toggle="false" id="page-footer">
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="junket-credit">
+                    <img src="./assets/images/junket_credit.png" />
+                    <span><%= ui_junketcredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="player-credit" class="ui-btn-active ui-state-persist">
+                    <img src="./assets/images/player_credit.png" alt="Picture" />
+                    <span><%= ui_playercredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="me">
+                    <img src="./assets/images/me.png" alt="Picture"/>
+                    <span><%= ui_me %></span> </a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div data-role="header" data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b  header">  
+        <div id="back-title-panel">
+        <span id="page-title">My Activities</span></div>
+</div>
+<div class="clear"></div>
+
+<div>
+    <div>
+       <div style="display: inline-block; vertical-align: top;padding-left:3px; padding-top: 5px; background-color: #EEEEEE; height:77px"><img src="./assets/images/current_user.png" width="60px;"></div>
+        <div style="display: inline-block; ">
+            <ul data-role="listview" id="current-login-user">
+                <li data-role="fieldcontain" style="width: 260px">
+                    <span><b>Amy Bond</b></span>
+                </li>
+                <li data-role="fieldcontain" >
+                    <span><b>Cage Credit Supervisor</b></span>
+                </li>             
+            </ul>
+        </div>
+    </div>
+
+    <div style="height:15px;border: 1px solid #456f9a; background: #5e87b0"></div>
+    
+        <ul id="my-activities" data-role="listview" data-filter="false" data-theme="c" data-inset="true" data-corners="false">
+            <li data-icon='false'>
+                <a data-theme="none" data-corners="false" data-shadow="false" id="my-tto-history">
+                    <img src="./assets/images/tto_history.png"/> 
+                    <span>TTO Adjust History</span></a>
+            </li>
+            <li data-icon='false'>
+                <a data-theme="none" data-corners="false" data-shadow="false" id="my-received-approval-requests">
+                    <img src="./assets/images/approval_requests.png"/> 
+                    <span>Approval Request Sent To Me</span> </a>            
+            </li>              
+    </ul>
+</div>    
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="page-footer" data-theme="b" data-tap-toggle="false" id="page-footer">
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="junket-credit">
+                    <img src="./assets/images/junket_credit.png" />
+                    <span><%= ui_junketcredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="player-credit" class="ui-btn-active ui-state-persist">
+                    <img src="./assets/images/player_credit.png" alt="Picture" />
+                    <span><%= ui_playercredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="me">
+                    <img src="./assets/images/me.png" alt="Picture"/>
+                    <span><%= ui_me %></span> </a>
+            </li>
+        </ul>
+    </div>
+</div>

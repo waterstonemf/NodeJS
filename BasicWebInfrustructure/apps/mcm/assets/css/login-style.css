@@ -1,0 +1,90 @@
+//.nav-custom .ui-btn .ui-btn-inner { padding-top: 33px !important; }
+.nav-custom .ui-btn .ui-btn-text { font-size: 11px !important;text-align:bottom !important;}
+.nav-custom .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+.ui-listview-filter-inset { margin:0; background: transparent; }
+.input-custom {
+	width:150px;
+	margin-left:10px;
+	color:#696969;
+	border:none; 
+	box-shadow:none; 
+	background-color:transparent;
+
+	font-weight: normal; 
+	background-image: none; 
+	padding: .4em; 
+	margin: 0 0; 
+	line-height: 1.4; 
+	font-size: 16px; 
+	display: block; 
+	outline: 0;
+	vertical-align:middle;
+}
+.input-label-custom {
+	float: left;
+	font-size: 16px; 
+	line-height: 1.4; 
+	display:inline-block;
+	font-weight: bold;
+	margin: .5em 0 .3em;
+	vertical-align:middle;
+	width: 80px;
+}
+.input-div {
+	float:left;
+}
+
+.ui-icon-mdahost-loginbtn {
+	background-image: url("/mcm/assets/images/icon_login_btn_d.png") !important;
+}
+
+.LoginForm1 {
+	width:290px;
+}
+
+.div-page-custom {
+	background: transparent;
+}
+
+.ui-listview-filter-inset { 
+	margin:0; 
+	background: transparent;
+}
+
+.iconfield-custom .ui-btn .ui-icon { 
+	width: 18px!important; 
+	height: 18px!important; 
+	margin-left: 2px !important; 
+	box-shadow: none!important; 
+	-moz-box-shadow: none!important; 
+	-webkit-box-shadow: none!important; 
+	-webkit-border-radius: 0 !important; 
+	border-radius: 0 !important; 
+}
+
+#divcenter{
+   position:absolute;
+   top:200px;
+   left:50%;
+   width:300px;
+   height:320px;
+   margin-top:-150px;
+   margin-left:-165px;
+}
+
+#msg_footbar ul li:last-child a {
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+}
+/*
+.body-custom {
+	background: -webkit-radial-gradient(circle, #6DABD4, #3B6EA0);
+}
+*/
+
+body {
+	background: -webkit-radial-gradient(circle, #6DABD4, #3B6EA0);
+}
+#backbonediv {
+	background: -webkit-radial-gradient(circle, #6DABD4, #3B6EA0);
+}

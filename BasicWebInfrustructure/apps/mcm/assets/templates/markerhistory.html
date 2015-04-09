@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="/mcm/assets/css/fmskhistory-style.css" />
+<div id="myheader" data-role="header" data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b">
+        <a data-role="button" class="ui-btn-left" id="back" data-icon="back"><%=ui_back%></a>
+        <h1 class="ui-title" role="heading"><%=pmcm%><%=ui_history%></h1>
+        <a data-role="button" class="ui-btn-right" data-transition="fade" id="logout-icon" data-icon="custom"><%=username%></a>
+</div>
+
+<div id="titlebar" data-filter="false" data-ajax="false">
+        <ul data-role="listview" data-filter="false" data-theme="c" data-inset="true" data-mini="true"> 
+                <table width='100%'>
+                <tr>
+                        <!--<td align='left' width='50%'><a data-role="button" class="ui-btn-left" data-transition="fade" id="refresh-icon" data-icon="refresh" ><%=ui_refresh%></a></td>-->
+                        <td align='left' width='50%'><a data-role="button" class="ui-btn-left" data-transition="fade" id="issuebtn" data-icon="plus" >Issue Marker</a></td>
+                        <td align='right' width='50%'><b><%=player%></b></td>
+                </tr>
+                </table>
+        </ul>
+</div>
+
+<div id="listdiv" data-filter="false" data-ajax="true">
+
+        <ul data-role="listview" data-filter="false" data-theme="c" data-inset="true" data-ajax="true"> 
+                <li data-icon='false' data-theme = "b"> 
+                        <a>
+                        <table width='100%'>
+                        <tr>
+                                <td align='left' width='20%'>DocumentID</td>
+                                <td align='left' width='20%'>Issue Date</td>
+                                <td align='left' width='20%'>Amount</td>
+                                <td align='left' width='20%'>Balance</td>
+                                <td align='left' width='20%'>Location</td>
+                        </tr>
+                        </table>
+                        </a>
+                </li>
+        </ul>
+
+        <ul id="listul" data-role="listview" data-filter="false" data-theme="c" data-inset="true"> 
+            <% _.each(collection.toJSON(), function(markerHistory){%>
+                <li data-icon='false'>
+                    <a>
+                        <table width='100%'>
+                            <tr>
+                                <td align='left' width='20%'><%=markerHistory.documentID%></td>
+                                <td align='left' width='20%'><%=markerHistory.issueDate%></td>
+                                <td align='left' width='20%'><%=markerHistory.amount%></td>
+                                <td align='left' width='20%'><%=markerHistory.balance%></td>
+                                <td align='left' width='20%'><%=markerHistory.location%></td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+            <%});%>
+        </ul>
+
+</div>
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="myfooter" data-theme="b" data-tap-toggle="false">
+    <div data-role="navbar"  data-iconpos="top">
+        <ul>
+            <li>
+				<a class="nav-custom" data-transition="slide" id="findplayer" data-icon="custom">
+                    <%=ui_findplayer%>
+                </a>
+            </li>
+            <li>
+                <a class="nav-custom" data-transition="slide" id="history"  data-icon="custom">
+                    <%=ui_browinghistory%>
+                </a>
+            </li>
+			<li>
+                <a class="nav-custom" data-transition="slide" id="about"  data-icon="custom">
+                    <%=ui_about%>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

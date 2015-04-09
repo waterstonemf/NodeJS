@@ -1,0 +1,105 @@
+<div data-role="header" data-position="fixed" data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b header">  
+    <div id="back-title-panel"><a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true"><img src="./assets/images/back.png" id="back"></a>
+        <span id="page-title">Adjust Player's Credit</span></div>
+        
+</div>
+<div class="clear"></div>
+
+<div style="text-align: center;">
+    <div>
+        <div style="display: inline-block; vertical-align: top"><img src="./assets/images/player_image_large.png" width="80px;"></div>
+        <div style="display: inline-block; ">
+            <ul data-role="listview" id="player-info">
+                <li data-role="fieldcontain"  style="padding-left: 2px;">
+                    <label class="input-label-custom" for="player-rank"><b>Nancy Wang</b></label>
+                    <input data-role="none" class="input-custom" name="player-rank" id="player-rank" value="Golden" type="text" disabled="true" style="text-align: right" />
+                </li>
+                <li data-role="fieldcontain" style="padding-left: 2px;">
+                    <label class="input-label-custom" for="player-company"><b>Company</b></label>
+                    <input data-role="none" class="input-custom" name="player-company" id="player-company" value="Macau Junket Ltd" type="text" disabled="true" style="text-align: right" />
+                </li>
+                <li data-role="fieldcontain" style="padding-left: 2px;">
+                    <div style="display: inline-block;">
+                    <label class="input-label-custom" for="player-available-limit"><b>Available Limit</b></label>
+                    <input data-role="none" class="input-custom" name="player-available-limit" id="player-available-limit" value="$0" type="text" disabled="true" style="text-align: right; width:110px;" />
+                    </div>
+                    <div style="display: inline-block; position: relative"><a data-role="button"  data-theme="none" data-corners="false" data-shadow="false" data-inline="true" id="limit-detail"> <img src="./assets/images/plus.png" width="25px" height="25px" style="margin-bottom: auto; margin-top: auto" /></a></div>
+                </li>              
+            </ul>
+        </div>
+    </div>
+    <div id="player-credit-info">
+       <ul data-role="listview" id="limit-detail-info">
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="front-money"><b>Front Money</b></label>
+                <input data-role="none" class="input-custom" name="front-money" id="front-money" value="$15,000,000" type="text" disabled="true" style="text-align: right" />
+            </li>
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="markers"><b>Marker</b></label>
+                <input data-role="none" class="input-custom" name="markers" id="markers" value="$20,000,000" type="text" disabled="true" style="text-align: right" />
+            </li>
+           <li data-role="fieldcontain">
+                <label class="input-label-custom" for="marks"><b>Check</b></label>
+                <input data-role="none" class="input-custom" name="checks" id="checks" value="$5,000,000" type="text" disabled="true" style="text-align: right" />
+            </li> 
+        </ul>
+        <ul data-role="listview" id="player-credit-info">
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="player-fixed-credit"><b>Credit</b></label>
+                <input data-role="none" class="input-custom" name="player-fixed-credit" id="player-fixed-credit" value="$10,000,000" type="text" disabled="true" style="text-align: right" />
+            </li>  
+        </ul>
+        <ul data-role="listview" id="player-tto-info">
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="player-tto"><b>TTO</b></label>
+                <input data-role="none" class="input-custom" name="player-tto" id="player-tto" value="$0" type="text" disabled="true" style="text-align: right" />
+            </li>  
+            <li data-role="fieldcontain">
+                <label class="input-label-custom" for="recommended-tto"><b>Suggested</b></label>
+                <input data-role="none" class="input-custom" name="recommended-tto" id="recommended-tto" value="$2,940,000 -- $4,425,000" type="text" disabled="true" style="text-align:right; font-weight: bold; color: orange" />
+            </li> 
+            <li id="tto-comment">
+                <table><tr><td><input name="new-tto" id="new-tto" data-inline="true" placeholder="Enter new TTO"/> </td>
+                        <td><input name="tto-expires" id="tto-expires" data-inline="true" placeholder="TTO Expires"  value="10-Nov-2014" type="text" style="text-align: center" /></td>
+                        <td></td></tr>
+                    <tr><td colspan="2"><textarea name="new-tto-comment" id="new-tto-comment" data-inline="true" placeholder="Enter Comments for new TTO"/></td>
+                        <td rowspan="2" style="vertical-align: middle"><a data-role="button" data-theme="none" data-corners="false" data-shadow="false" height="23px" id="tto-save"><img src="./assets/images/edit_tto.png" width="30px" height="23px;" /></a></td></tr>
+                </table>
+            </li> 
+        </ul>
+    </div>
+    
+    <div>
+        <img src="./assets/images/leida.png" id="leida-chart"/>
+    </div>
+
+    <div data-role="popup" id="popup-request-approval">   
+        <p>Requested TTO <b><span id="request-amount">$8,000,000</span></b> over your max authorized amount <b>$5,000,000</b></p>
+        <p>The request will be sent to your supervisor for approval</p>
+        <input type="button" id="request-approval" name="request-approval" value="OK" />
+    </div>
+        
+</div>
+
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="page-footer" data-theme="b" data-tap-toggle="false" id="page-footer">
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="junket-credit">
+                    <img src="./assets/images/junket_credit.png" />
+                    <span><%= ui_junketcredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="player-credit" class="ui-btn-active ui-state-persist">
+                    <img src="./assets/images/player_credit.png" alt="Picture" />
+                    <span><%= ui_playercredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="me">
+                    <img src="./assets/images/me.png" alt="Picture"/>
+                    <span><%= ui_me %></span> </a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="/mcm/assets/css/common.css" />
+
+<div id="myheader" data-role="header" data-theme="b"  data-tap-toggle="false" class="ui-header ui-bar-b">
+	<a data-role="button" class="ui-btn-left" data-transition="fade" id="refresh-icon" data-icon="refresh"><%=refresh%></a>
+	<h1 class="ui-title" role="heading"><%=playercredit%></h1>
+	<a data-role="button" class="ui-btn-right" data-transition="fade" id="logout-icon" data-icon="custom"><%= username %></a>
+</div>
+
+<div id="cl-tto-content">
+<form method="post" id="cl-tto-form" data-ajax="false">	
+    <div id="searchdiv">
+            <ul data-role="listview" data-inset="true" id="infoList">
+            <li data-role="fieldcontain">
+                <label class="input-label-custom-long" for="credit-limit"><b>Credit Limit:</b></label>
+                <input data-role="none" class="input-custom" name="credit-limit" id="credit-limit" placeholder="" value="" type="text" />
+            </li>
+            <li data-role="fieldcontain">
+                <label class="input-label-custom-long" for="credit-limit-comment"><b>Credit Limit Comment:</b></label>
+                <input data-role="none" class="input-custom" name="credit-limit-comment" id="credit-limit-comment" placeholder="" data-mini="true" />
+            </li>
+            <li data-role="fieldcontain">
+                <label class="input-label-custom-long" for="credit-inactivity-days"><b>Credit Inactivity Days:</b></label>
+                <input data-role="none" class="input-custom" name="credit-inactivity-days" id="credit-inactivity-days" value="-1" type="number" />
+            </li>
+            <li data-role="fieldcontain">
+                <label class="input-label-custom-long" for="tto-amount"><b>TTO Amount:</b></label>
+                <input data-role="none" class="input-custom" name="tto-amount" id="tto-amount" placeholder="" value="" type="text" />
+            </li>  
+            <li data-role="fieldcontain">
+                <label class="input-label-custom-long" for="tto-amount-comment"><b>TTO Amount Comment:</b></label>
+                <input data-role="none" class="input-custom" name="tto-amount-comment" id="tto-amount-comment" placeholder="" data-mini="true" />
+            </li> 
+            <li data-role="fieldcontain">                
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend class="input-label-custom-long" data-role="none"><b>TTO Expires:</b></legend>
+                    <input  type="radio" name="tto-expires" id="tto-expires-choice-1" value="ByDate" checked="checked" />
+                    <label  for="tto-expires-choice-1" id="tto-expires-choice-1-label"  >By Date</label>
+
+                    <input type="radio" name="tto-expires" id="tto-expires-choice-2" value="EndOfTrip" />
+                    <label for="tto-expires-choice-2"  >End of Trip</label>
+                    <input data-role="none"  class="input-custom" name="tto-expires-date" id="tto-expires-date"  type="date" value="<%=currentDate%>" />
+                    <input data-role="none" class="input-custom" name="tto-expires-trip" id="tto-expires-trip" value="1" readonly="readonly" type="number" style="display: none;" />
+                </fieldset>
+            </li>
+            <li data-role="fieldcontain">
+                <label class="input-label-custom-long" for="authorizer" id="authorizer-lable"><b>Authorizer:</b></label>
+                <select name="authorizer" id="authorizer" data-mini="true">
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+                </select>
+            </li> 
+            <li data-role="fieldcontain">
+                <div class="align-wrapper">           
+                <a id="cl-tto_submit" data-role="button" data-inline="true"  data-theme="b">
+                    Submit
+                </a>
+                <a id="cl-tto-cancel" data-role="button" data-inline="true"  data-theme="b" >
+                    Cancel
+                </a>
+            </div>
+            </li> 
+            </ul>
+    </div>
+</form>
+    <div data-role="popup" id="submitconfirm">
+        <p>Credit Line Adjustment Request Sent Successfully</p>
+        <a id="submit-confirm" data-role="button" data-inline="true"  data-theme="b" data-mini="true">OK</a>
+    </div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" id="myfooter"  data-tap-toggle="false">
+	  <div data-role="navbar"  data-iconpos="top">
+        <ul>
+            <li>
+		<a class="nav-custom" data-transition="slide" id="findplayer" data-icon="custom">
+                    <%=ui_findplayer%>
+                </a>
+            </li>
+            <li>
+                <a class="nav-custom" data-transition="slide" id="history"  data-icon="custom">
+                    <%=ui_browinghistory%>
+                </a>
+            </li>
+            <li>
+		<a class="nav-custom" data-transition="slide" id="creditlineman" data-icon="custom">
+                    <%=ui_creditlineman%>
+                </a>
+            </li>  
+	    <li>
+                <a class="nav-custom" data-transition="slide" id="about"  data-icon="custom">
+                    <%=ui_about%>
+                </a>
+            </li>          
+        </ul>
+	  </div>
+</div>

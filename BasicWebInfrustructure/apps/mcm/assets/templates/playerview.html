@@ -1,0 +1,290 @@
+<link rel="stylesheet" href="/mcm/assets/css/playerview-style.css" />
+
+<div id="myheader" data-role="header" data-theme="b"  data-tap-toggle="false" class="ui-header ui-bar-b">
+	<a data-role="button" class="ui-btn-left" data-transition="fade" id="refresh-icon" data-icon="refresh"><%=refresh%></a>
+	<h1 class="ui-title" role="heading"><%=playercredit%></h1>
+	<a data-role="button" class="ui-btn-right" data-transition="fade" id="logout-icon" data-icon="custom"><%= username %></a>
+</div>
+
+<div id="main">
+<div id="maininfo" data-filter="false" >
+
+	<ul data-role="listview" data-filter="false" data-theme="d" data-inset="true"> 
+		<li data-icon='false' data-theme = "d"> 
+			<a style="margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;">
+			<table width='100%'>
+			<tr>
+				<td style='width:50%; text-align:center;'><img src="data:image/jpeg;base64,<%=playerImage%>" width="183" height="183"></td>
+				<td style='width:50%; text-align:left;'><table style="height:75px;color:#4A7CAF"><tr><td style='margin-bottom:10px;'><%=firstName%></td></tr><tr><td><%=lastName%></td></tr></table></td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Player ID </td>
+				<td class='rightcol'> <%=playerID %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> CTA InternalID </td>
+				<td class='rightcol'> <%=ctaInternalID %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Player Status </td>
+				<td class='rightcol'> <%=playerStatus %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Credit Status </td>
+				<td class='rightcol'> <%=creditStatus %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+	</ul>
+
+</div>
+
+<div id="actioninfo" data-filter="false" >
+
+	<ul data-role="listview" data-filter="false" data-theme="d" data-inset="true"> 
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Last Action Amount </td>
+				<td class='rightcol'> <%=lastActionAmount %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Last Action Date </td>
+				<td class='rightcol'> <%=lastActionDate %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> High Action Amount </td>
+				<td class='rightcol'> <%=highActionAmount %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> High Action Date </td>
+				<td class='rightcol'> <%=highActionDate %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+	</ul>
+
+</div>
+</div>
+
+<div id="creditinfo" data-filter="false" >
+
+	<ul data-role="listview" data-filter="false" data-theme="d" data-inset="true"> 
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='94%'>
+			<tr>
+				<td class='leftcol'> AvailableLimit </td>
+				<td class='rightcol'> <%=AvailableLimit %> </td>
+				
+			</tr>
+			</table>
+			</a>
+			
+		</li>
+		
+		<li data-icon='arrow-r' data-theme = "c"> 
+			<a id="creditline">
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Credit Line </td>
+				<td class='rightcol'> <%=CreditLine %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='arrow-r' data-theme = "c" > 
+			<a id="ttolimit">
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> TTO Limit </td>
+				<td class='rightcol'> <%=TTOLimit %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='94%'>
+			<tr>
+				<td class='leftcol'> Total Limit </td>
+				<td class='rightcol'> <%=TotalLimit %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='arrow-r' data-theme = "c"> 
+			<a id="fm">
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Front Money </td>
+				<td class='rightcol'> <%=FrontMoney %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='arrow-r' data-theme = "c"> 
+			<a id="sk">
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Safe Keeping </td>
+				<td class='rightcol'> <%=SafeKeeping %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+                
+		<li data-icon='arrow-r' data-theme = "d"> 
+			<a id="pitmarker">
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Pit Markers </td>
+				<td class='rightcol'> <%=PitMarkers %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='arrow-r' data-theme = "d"> 
+			<a id="cagemarker">
+			<table width='100%'>
+			<tr>
+				<td class='leftcol'> Cage Markers </td>
+				<td class='rightcol'> <%=CageMarkers %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='94%'>
+			<tr>
+				<td class='leftcol'> Checks </td>
+				<td class='rightcol'> <%=Checks %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='94%'>
+			<tr>
+				<td class='leftcol'> Returned Items </td>
+				<td class='rightcol'> <%=ReturnedItems %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='94%'>
+			<tr>
+				<td class='leftcol'> Write Offs </td>
+				<td class='rightcol'> <%=WriteOffs %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+		<li data-icon='false' data-theme = "d"> 
+			<a>
+			<table width='94%'>
+			<tr>
+				<td class='leftcol'> Outstanding </td>
+				<td class='rightcol'> <%=Outstanding %> </td>
+			</tr>
+			</table>
+			</a>
+		</li>
+		
+	</ul>
+
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" id="myfooter"  data-tap-toggle="false">
+	  <div data-role="navbar"  data-iconpos="top">
+        <ul>
+            <li>
+		<a class="nav-custom" data-transition="slide" id="findplayer" data-icon="custom">
+                    <%=ui_findplayer%>
+                </a>
+            </li>
+            <li>
+                <a class="nav-custom" data-transition="slide" id="history"  data-icon="custom">
+                    <%=ui_browinghistory%>
+                </a>
+            </li>
+            <li>
+		<a class="nav-custom" data-transition="slide" id="creditlineman" data-icon="custom">
+                    <%=ui_creditlineman%>
+                </a>
+            </li>  
+	    <li>
+                <a class="nav-custom" data-transition="slide" id="about"  data-icon="custom">
+                    <%=ui_about%>
+                </a>
+            </li>          
+        </ul>
+	  </div>
+</div>

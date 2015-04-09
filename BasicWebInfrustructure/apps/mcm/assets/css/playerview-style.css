@@ -1,0 +1,69 @@
+#divpage {
+  margin: 0;
+  padding: 0;
+
+}
+
+#main
+{
+	display: inline-block;
+	width:50%;
+	margin:10px 0% 0% 0%;
+	padding: 0;
+}
+
+#maininfo
+{
+	width:100%;
+	margin:0px 0% 0% 0%;
+
+}
+#actioninfo
+{
+	width:100%;
+	margin:0px 0% 0% 0%;
+}
+
+#creditinfo
+{
+	display:inline-block;
+	vertical-align: top;
+	width:49%;
+	margin: 10px 0% 0% 0%;
+	
+}
+
+.leftcol
+{
+	width:45%;
+	text-align:left;
+}
+.rightcol
+{
+	width:55%;
+	text-align:right;
+	color:#4A7CAF;
+	margin-right:100px;
+}
+.grayli
+{
+	background-color:#333333;
+}
+
+
+
+.middlecol
+{
+	text-align:center;
+}
+
+#logout-icon  .ui-icon{ background:  url("../icon library/logout_btn_icon.png") 50% 50% no-repeat; background-size: 18px 18px; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important;-webkit-border-radius: 0 !important; border-radius: 0 !important;}
+
+.nav-custom .ui-btn .ui-btn-inner { padding-top: 33px !important; }
+.nav-custom .ui-btn .ui-btn-text { font-size: 11px !important;text-align:bottom !important;}
+.nav-custom .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+
+#findplayer  .ui-icon{background:  url("../icon library/find_btn.png") 50% 50% no-repeat; background-size: 28px 28px;}
+#about  .ui-icon{background:  url("../icon library/help_btn.png") 50% 50% no-repeat; background-size: 28px 28px;}
+#history  .ui-icon{background:  url("../icon library/history.png") 50% 50% no-repeat; background-size: 28px 28px;}
+#creditlineman  .ui-icon{background:  url("../icon library/creditlineman.png") 50% 50% no-repeat; background-size: 28px 28px;}

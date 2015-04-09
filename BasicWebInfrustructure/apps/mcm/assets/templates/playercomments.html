@@ -1,0 +1,68 @@
+<div data-role="header"   data-position="fixed"  data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b  header">  
+    <div id="back-title-panel"><a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true"><img src="./assets/images/back.png" id="back"></a>
+        <span id="page-title">Player Comments</span></div>
+        <img src="./assets/images/player_image_small.png" id="switch-player">
+</div>
+
+
+<div style="text-align: center;">
+    <table data-role="table" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive">
+         <thead>
+           <tr class="ui-bar-d">
+             <th>Date</th>
+             <th>Comments</th>
+             <th>Entered By</th>             
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <th>08/Sep/2013</th>            
+             <td>This is junket promoter, give big TTO</td>
+             <td>Nancy Wang</td>             
+		   </tr>
+           <tr>
+              <th>09/Sep/2012</th>            
+             <td>This player is trustable, deposit big check</td>
+             <td>Meng Song</td>
+           </tr>
+           <tr>
+              <th>01/Jan/2011</th>            
+             <td>The player is CEO of Hongkong bank</td>
+             <td>Wendy Wen</td>
+           </tr>
+           <tr>
+             <th>09/Jun/2010</th>            
+             <td>The player has promoter license, trustable</td>
+             <td>Yu Feifei</td>
+           </tr>           
+		   <tr>
+             <th>11/Nov/2009</th>            
+             <td>The player asked for big TTO</td>
+             <td>Cindy Curray</td>
+           </tr>           
+         </tbody>
+       </table>
+
+</div>
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="page-footer" data-theme="b" data-tap-toggle="false" id="page-footer">
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="junket-credit">
+                    <img src="./assets/images/junket_credit.png" />
+                    <span><%= ui_junketcredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="player-credit" class="ui-btn-active ui-state-persist">
+                    <img src="./assets/images/player_credit.png" alt="Picture" />
+                    <span><%= ui_playercredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="me">
+                    <img src="./assets/images/me.png" alt="Picture"/>
+                    <span><%= ui_me %></span> </a>
+            </li>
+        </ul>
+    </div>
+</div>

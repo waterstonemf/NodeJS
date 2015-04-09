@@ -1,0 +1,50 @@
+<div id="mainpage" class="div-page-custom body-custom">
+    
+    <div data-role="content" id="divcenter" class="LoginForm1">
+    <form id="login-form"  method="POST" data-ajax="false">
+        <div>
+                <div align="center">
+                        <img src="/mcm/assets/images/mobilecreditmanagement.png"/>
+                </div>
+        </div>
+        <div data-role="fieldcontain">
+                    <ul data-role="listview" data-inset="true" id="infoList">
+                            <li data-role="fieldcontain">
+                                    <label id='label-user' class="input-label-custom" for="username">
+                                            <%=msguser%>
+                                    </label>
+                                    <input data-role="none" class="input-custom" name="username" id="username" placeholder="" value="" type="text" />
+                            </li>
+                            <li data-role="fieldcontain">
+                                    <label id='label-password' class="input-label-custom" for="password">
+                                            <%=msgpassword%>
+                                    </label>
+                                    <input data-role="none" class="input-custom" name="password" id="password" placeholder="" value="" type="password"/>
+                            </li>
+                    </ul>
+        </div>
+        <div>
+            <input id="btn-login" type="submit" data-theme="d" data-icon="mdahost-loginbtn" data-iconpos="left" value="<%= msglogin%>"/>
+        </div>
+
+    </form>
+    </div>
+</div>
+
+<div data-role="dialog" id="popup">
+    
+    <div data-role="header" data-theme="b">
+            <h1 id="diaHeader">ABC</h1>
+    </div>
+
+    <div data-role="content" data-theme="d">	
+            <h2 id="errHeader">Login Failed</h2>
+            <p id="errMessage">Login failed, please input correct username or password!</p>		
+            <p><a id="btn_retry" data-role="button" data-inline="true" data-icon="back"><%=tryagain%></a></p>	
+    </div>
+
+    <div data-role="footer">
+            <h4>ABC Cage Credit</h4>
+    </div>
+</div>
+

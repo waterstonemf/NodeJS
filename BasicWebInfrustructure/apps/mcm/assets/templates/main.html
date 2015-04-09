@@ -1,0 +1,48 @@
+<div data-role="header"   data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b  header">
+        <img src="./assets/images/abc_mcm.png">
+</div>
+<div class="clear"></div>
+
+<div style="text-align: center; padding-top: 15px;">
+    <div id="player-search-panel" style="text-align: center">
+        <input type="search" name="search" id="player-search-input" value="" data-inline="true" placeholder="search by id or name"/>
+    </div>
+    
+    <div>
+        <a id="adjust" disabled="disabled" class="main-fuction" data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" style="margin-right: 35px">Adjust</a>
+        <a id="history" disabled="disabled" class="main-fuction" data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true">History</a>        
+    </div>
+    <div>
+
+        <a id="player-search" data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" >
+            <img id="player-search-image" src="./assets/images/choose_player.png" width="100px" height="100px"/>
+        </a>
+    </div>
+    <div>
+        <a id="enquery" disabled="disabled" class="main-fuction" data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" style="margin-right: 35px">Inquiry</a>
+        <a id="comments" disabled="disabled" class="main-fuction" data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true">Comments</a>
+    </div>
+</div>
+
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="page-footer" data-theme="b" data-tap-toggle="false" id="page-footer">
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="junket-credit">
+                    <img src="./assets/images/junket_credit.png" />
+                    <span><%= ui_junketcredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="player-credit" class="ui-btn-active ui-state-persist">
+                    <img src="./assets/images/player_credit.png" alt="Picture" />
+                    <span><%= ui_playercredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="me">
+                    <img src="./assets/images/me.png" alt="Picture"/>
+                    <span><%= ui_me %></span> </a>
+            </li>
+        </ul>
+    </div>
+</div>

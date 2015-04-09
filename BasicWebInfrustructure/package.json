@@ -1,0 +1,13 @@
+{
+  "name": "Mobile-Report-Viewer",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.0.6",
+    "jade": "*",
+    "ejs": "*",
+    "mongoose": ">= 2.6.5",
+    "connect": ">= 1.9.1" ,
+    "request": "*"
+  }
+}

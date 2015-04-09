@@ -1,0 +1,51 @@
+.input-custom {
+	width:70%;
+	margin-left:10px;
+	color:#696969;
+	border:none; 
+	box-shadow:none; 
+	background-color:transparent;
+	font-weight: normal; 
+	background-image: none; 
+	padding: .4em; 
+	margin: 0 0; 
+	line-height: 1.4; 
+	font-size: 16px; 
+	display: block; 
+	outline: 0;
+	vertical-align:middle;
+}
+.input-label-custom {
+	float: left;
+        vertical-align:middle;
+	font-size: 16px; 
+	line-height: 1.4; 
+	display:inline-block;
+	font-weight: bold;
+	margin: .5em 0 .3em;
+	width: 25%;
+}
+.clselect{
+    width:70%;
+    margin-right:0px;
+    color:#696969;
+    border:none; 
+    box-shadow:none; 
+    background-color:transparent;
+    font-size:16px;
+}
+.fc{
+    height:35px;
+}
+
+#logout-icon  .ui-icon{ background:  url("../icon library/logout_btn_icon.png") 50% 50% no-repeat; background-size: 18px 18px; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important;-webkit-border-radius: 0 !important; border-radius: 0 !important;}
+
+.nav-custom .ui-btn .ui-btn-inner { padding-top: 33px !important; }
+.nav-custom .ui-btn .ui-btn-text { font-size: 11px !important;text-align:bottom !important;}
+.nav-custom .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+
+#findplayer  .ui-icon{background:  url("../icon library/find_btn.png") 50% 50% no-repeat; background-size: 28px 28px;}
+#about  .ui-icon{background:  url("../icon library/help_btn.png") 50% 50% no-repeat; background-size: 28px 28px;}
+#history  .ui-icon{background:  url("../icon library/history.png") 50% 50% no-repeat; background-size: 28px 28px;}
+
+#marker  {display:block;}

@@ -1,0 +1,61 @@
+<div data-role="header"  data-position="fixed" data-theme="b" data-tap-toggle="false" class="ui-header ui-bar-b  header">  
+        <div id="back-title-panel">
+        <span id="page-title">Junket Credit</span></div>
+</div>
+<div class="clear"></div>
+
+<div style="text-align: center;">
+
+    <div id="player-credit-info">
+        <ul data-role="listview">
+            <li data-role="fieldcontain">
+			<a href="#junketcompany/1">
+                <label width="200px;" for="player-fixed-credit"><b>Hongkong Junket Company</b></label>				
+                <input data-role="none" class="input-custom" name="player-fixed-credit" id="player-fixed-credit" value="Credit: $20,000    TTO: $350,000" type="text" disabled="true" />
+				<div><img src="./assets/images/junket_creidt_1.png" height="15px" width="300px" /></div>     
+			</a>				
+		   </li>  
+        </ul>
+        <ul data-role="listview">
+            <li data-role="fieldcontain">
+			<a href="#junketcompany/2">
+                <label width="200px;" for="player-tto"><b>Macau Hongda Junket Ltd.</b></label>				
+                <input data-role="none" class="input-custom" name="player-tto" id="player-tto" value="Credit: $8,000    TTO: $320,000" type="text" disabled="true" />
+				<div><img src="./assets/images/junket_creidt_2.png" height="15px" width="230px" /></div>
+			</a>
+			</li>  
+		</ul>	
+		<ul data-role="listview">
+            <li data-role="fieldcontain">
+			<a href="#junketcompany/3">
+                <label width="200px;" for="player-tto"><b>Zhuhai Money Shark Ltd.</b></label>				
+                <input data-role="none" class="input-custom" name="player-tto" id="player-tto" value="Credit: $15,000    TTO: $300,000" type="text" disabled="true" />
+				<div><img src="./assets/images/junket_creidt_3.png" height="15px" width="180px" /></div>
+			</a>
+			</li>  
+		</ul>	
+	</div>
+
+</div>
+
+<div data-role="footer" data-position="fixed" class="nav-custom ui-footer-fixed ui-bar-b slideup" date-id="page-footer" data-theme="b" data-tap-toggle="false" id="page-footer">
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="junket-credit">
+                    <img src="./assets/images/junket_credit.png" />
+                    <span><%= ui_junketcredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="player-credit" class="ui-btn-active ui-state-persist">
+                    <img src="./assets/images/player_credit.png" alt="Picture" />
+                    <span><%= ui_playercredit %></span> </a>
+            </li>
+            <li>
+                <a data-role="button" data-theme="none" data-corners="true" data-shadow="false" data-inline="true" id="me">
+                    <img src="./assets/images/me.png" alt="Picture"/>
+                    <span><%= ui_me %></span> </a>
+            </li>
+        </ul>
+    </div>
+</div>
